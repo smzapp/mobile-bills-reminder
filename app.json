@@ -1,23 +1,31 @@
 {
   "expo": {
-    "name": "mobile-bills-reminder",
-    "slug": "mobile-bills-reminder",
+    "name": "Nudge",
+    "slug": "nudge",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "mobilebillsreminder",
-    "userInterfaceStyle": "automatic",
+    "scheme": "nudge",
+    "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.nudge.reminder"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#DEEEF6",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.nudge.reminder",
+      "permissions": [
+        "POST_NOTIFICATIONS",
+        "SCHEDULE_EXACT_ALARM",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
     },
     "web": {
       "output": "server",
@@ -28,11 +36,32 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#F6F5F2",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
-      ]
+      ],
+      "expo-sqlite",
+      "expo-audio",
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/sounds/soft_chime.wav",
+            "./assets/sounds/gentle_bell.wav",
+            "./assets/sounds/school_bell.wav",
+            "./assets/sounds/professional_alert.wav",
+            "./assets/sounds/digital_alert.wav",
+            "./assets/sounds/cash_register.wav",
+            "./assets/sounds/classic_alarm.wav",
+            "./assets/sounds/warm_notification.wav"
+          ],
+          "color": "#24718A",
+          "defaultChannel": "default"
+        }
+      ],
+      "expo-secure-store",
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true,

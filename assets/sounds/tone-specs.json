@@ -1,0 +1,148 @@
+[
+  {
+    "id": "soft_chime",
+    "name": "Soft Chime",
+    "description": "Bright, three rising notes",
+    "fileName": "soft_chime.wav",
+    "synth": {
+      "notes": [
+        880,
+        1320,
+        1760
+      ],
+      "waveform": "sine",
+      "noteSeconds": 0.3,
+      "gain": 0.5,
+      "repeats": 2
+    }
+  },
+  {
+    "id": "gentle_bell",
+    "name": "Gentle Bell",
+    "description": "Slow, warm chord",
+    "fileName": "gentle_bell.wav",
+    "synth": {
+      "notes": [
+        392,
+        494,
+        587,
+        784
+      ],
+      "waveform": "sine",
+      "noteSeconds": 0.42,
+      "gain": 0.5,
+      "repeats": 1
+    }
+  },
+  {
+    "id": "school_bell",
+    "name": "School Bell",
+    "description": "Wooden and upbeat",
+    "fileName": "school_bell.wav",
+    "synth": {
+      "notes": [
+        523,
+        659,
+        784,
+        1047
+      ],
+      "waveform": "triangle",
+      "noteSeconds": 0.15,
+      "gain": 0.5,
+      "repeats": 3
+    }
+  },
+  {
+    "id": "professional_alert",
+    "name": "Professional Alert",
+    "description": "Short repeating beeps",
+    "fileName": "professional_alert.wav",
+    "synth": {
+      "notes": [
+        660,
+        0,
+        660,
+        0,
+        660
+      ],
+      "waveform": "square",
+      "noteSeconds": 0.11,
+      "gain": 0.16,
+      "repeats": 2
+    }
+  },
+  {
+    "id": "digital_alert",
+    "name": "Digital Alert",
+    "description": "Alarm-style two-tone",
+    "fileName": "digital_alert.wav",
+    "synth": {
+      "notes": [
+        1200,
+        900,
+        1200,
+        900
+      ],
+      "waveform": "square",
+      "noteSeconds": 0.09,
+      "gain": 0.16,
+      "repeats": 3
+    }
+  },
+  {
+    "id": "cash_register",
+    "name": "Cash Register",
+    "description": "Ringing bells for bills",
+    "fileName": "cash_register.wav",
+    "synth": {
+      "notes": [
+        1046,
+        1318,
+        1568,
+        1318
+      ],
+      "waveform": "triangle",
+      "noteSeconds": 0.28,
+      "gain": 0.45,
+      "repeats": 2
+    }
+  },
+  {
+    "id": "classic_alarm",
+    "name": "Classic Alarm",
+    "description": "Builds slowly, hard to miss",
+    "fileName": "classic_alarm.wav",
+    "synth": {
+      "notes": [
+        330,
+        440,
+        550,
+        660,
+        880
+      ],
+      "waveform": "sine",
+      "noteSeconds": 0.2,
+      "gain": 0.55,
+      "repeats": 3
+    }
+  },
+  {
+    "id": "warm_notification",
+    "name": "Warm Notification",
+    "description": "Gentle arpeggio",
+    "fileName": "warm_notification.wav",
+    "synth": {
+      "notes": [
+        523,
+        659,
+        784,
+        988,
+        1175
+      ],
+      "waveform": "sine",
+      "noteSeconds": 0.12,
+      "gain": 0.5,
+      "repeats": 2
+    }
+  }
+]
